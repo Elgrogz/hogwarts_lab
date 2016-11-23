@@ -2,7 +2,7 @@
 <% for student in @students %>
   <p>Name: <%= student.full_name() %></p>
   <p>Age: <%= student.age() %></p>
-  <p>House: <%= student.house() %></p>
+  <p>House: <%= student.house.name() %></p>
   <p>Student ID: <%= student.id() %></p>
   <p><a href="/students/<%= student.id %>">Show student</a></p>
   <hr/>
