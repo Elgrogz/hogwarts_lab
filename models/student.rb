@@ -54,7 +54,7 @@ class Student
     SqlRunner.run( sql )
   end
 
-  def house
+  def house()
       sql = "SELECT * FROM houses WHERE id = #{@house_id};"
       house = SqlRunner.run( sql )
       return House.new(house[0])

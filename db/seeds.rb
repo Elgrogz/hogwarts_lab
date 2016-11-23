@@ -4,22 +4,22 @@ require('pry-byebug')
 
 house1 = House.new({
   "name" => "Gryffindor",
-  "logo" => ""
+  "logo" => "http://vignette4.wikia.nocookie.net/harrypotter/images/3/37/Gryffindor_Crest.jpg/revision/latest?cb=20120317101541"
   })
 
 house2 = House.new({
   "name" => "Slytherin",
-  "logo" => ""
+  "logo" => "http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=45479348"
   })
 
 house3 = House.new({
   "name" => "Hufflepuff",
-  "logo" => ""
+  "logo" => "http://i402.photobucket.com/albums/pp108/foreversparrow/Gaia/hflpf.jpg"
   })
 
 house4 = House.new({
   "name" => "Ravenclaw",
-  "logo" => ""
+  "logo" => "https://s-media-cache-ak0.pinimg.com/236x/7c/98/78/7c9878c68e85fd579f8a0fb9c4fee339.jpg"
   })
 
 house1.save

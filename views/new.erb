@@ -15,17 +15,19 @@
     </label>
   </p>
 
-  <!-- <p>
+  <p>
     <label>
       House:
-      <select name="house">
-        <option value="Gryffindor">Gryffindor</option>
-        <option value="Slytherin">Slytherin</option>
-        <option value="Hufflepuff">Hufflepuff</option>
-        <option value="Ravenclaw">Ravenclaw</option>
+      <select name="house_id">
+
+        <% for house in @houses %>
+        <option value="<%= house.id %>"><%= house.name %></option>
+        <% end %>
+
+
       </select>
     </label>
-  </p> -->
+  </p>
 
   <p>
     <label>

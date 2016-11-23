@@ -12,12 +12,15 @@ end
 
 #create new student with a form
 get '/students/new' do
+  @houses = House.all
   erb(:new)
 end
 
 #'save' student in the db
 post '/students' do
+  @houses = House.all
   student = Student.new(params)
+
   student.save
   redirect to('/students')
 end
