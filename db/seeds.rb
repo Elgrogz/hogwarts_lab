@@ -4,7 +4,7 @@ require('pry-byebug')
 
 house1 = House.new({
   "name" => "Gryffindor",
-  "logo" => "http://vignette4.wikia.nocookie.net/harrypotter/images/3/37/Gryffindor_Crest.jpg/revision/latest?cb=20120317101541"
+  "logo" => "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdADuMlvu7oTovbt_SlG4mIQw82HJxTP3jQZ3QCOtvMWu1pko5JA"
   })
 
 house2 = House.new({
@@ -48,10 +48,26 @@ student3 = Student.new({
 "house_id" => house2.id
   })
 
+student4 = Student.new({
+"first_name" => "Cedric",
+"last_name" => "Diggory",
+"age" => 15,
+"house_id" => house3.id
+  })
+
+student5 = Student.new({
+"first_name" => "Cho",
+"last_name" => "Chang",
+"age" => 15,
+"house_id" => house4.id
+  })
+
 student1.save
 student2.save
 student3.save
+student4.save
+student5.save
 
 
-binding.pry
-nil
+# binding.pry
+# nil

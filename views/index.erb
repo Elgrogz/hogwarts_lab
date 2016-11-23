@@ -1,11 +1,13 @@
 <h1>Students</h1>
 <% for student in @students %>
+  <div>
   <p>Name: <%= student.full_name() %></p>
   <p>Age: <%= student.age() %></p>
   <p>House: <%= student.house.name() %></p>
-  <img src=<%= student.house.logo() %>/>
-  <p>Student ID: <%= student.id() %></p>
+  <!-- <p>Student ID: <%= student.id() %></p> -->
   <p><a href="/students/<%= student.id %>">Show student</a></p>
+  <img src=<%= student.house.logo() %> height="150" width="150"/>
+  </div>
   <hr/>
 <% end %>
 

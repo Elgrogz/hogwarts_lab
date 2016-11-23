@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'HarryPotter';
+  src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
+}
+
+body {
+  background-color: DarkOrchid;
+  color: GoldenRod;
+  font-size: 1.1em;
+  font-family: 'HarryPotter', Book Anitqua, Palatino;
+}
+
+img {
+  /*display: flex;
+  align-items: flex-end;*/
+  float: right;
+  margin-top: -150px;
+}
+
+nav {
+  font-size: 1.5em;
+}
